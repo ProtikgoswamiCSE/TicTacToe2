@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/ttt"
+    tools:context=".AddPlayers">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/lavender_border"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTER \n Player's Name"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/playerOne"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/lavender_border"
+                android:hint="Player One Name"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_xicon"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/playerTwo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/lavender_border"
+                android:hint="Player Two Name"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_oicon"
+                android:textStyle="italic"/>
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/StartGameButton"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textSize="19sp"
+                app:cornerRadius="20dp"
+                tools:ignore="TextSizeCheck" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+

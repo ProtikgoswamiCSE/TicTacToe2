@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Start Game </string>
+    <string name="player_one">Player One</string>
+    <string name="player_two">Player Two</string>
+</resources>
